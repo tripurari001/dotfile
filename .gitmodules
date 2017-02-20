@@ -1,3 +1,6 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/vimjinja"]
+	path = bundle/vimjinja
+	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
