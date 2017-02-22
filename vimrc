@@ -1,5 +1,6 @@
 "pathogen init script 
 execute pathogen#infect()
+call pathogen#helptags()
 
 " enter into modern mode 
 set nocompatible
@@ -41,3 +42,15 @@ au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm,*.twig set ft=jinja
 syntax enable
 set background=dark
 colorscheme solarized
+
+" Hilight current line 
+set cursorline
+
+" visual autocomplete for command menu
+set wildmenu            
+
+" Set to auto read when a file is changed from the outside
+set autoread
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start  
