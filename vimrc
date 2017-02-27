@@ -40,6 +40,7 @@ au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm,*.twig set ft=jinja
 
 "color scheme
 syntax enable
+set t_Co=256
 set background=dark
 colorscheme solarized
 
@@ -56,12 +57,8 @@ set autoread
 set backspace=indent,eol,start
 
 " show one extra line in bottom
-if !&scrolloff
-  set scrolloff=1
-endif
-if !&sidescrolloff
-  set sidescrolloff=5
-endif
+set scrolloff=2
+set sidescrolloff=5
 
 " dont show @ symbol if last line dosent fit on screen
 set display+=lastline
@@ -82,10 +79,33 @@ set ruler
 
 " utf-8 charset
 if &encoding ==# 'latin1' && has('gui_running')
-  set encoding=utf-8
+  set encoding=utf-8 nobomb
 endif
 
 " to show invisible carecter as
-if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-endif
+set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
+
+" Centralize backups, swapfiles and undo history
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+set undodir=~/.vim/undo
+
+" show the current mode
+set showmode
+
+" Show the (partial) command as it’s being typed
+set showcmd
+
+" New window goes below
+set splitbelow
+
+" New windows goes right
+set splitright
+
+" Character for CLI expansion (TAB-completion)
+set wildchar=<TAB> 
+
+set wildignore+=.DS_Store
+set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js
+set wildignore+=*/bower_components/*,*/node_modules/*
+set wildignore+=*/smarty/*,*/vendor/*,*/.git/*,*/.hg/*,*/.svn/*,*/.sass-cache/*,*/log/*,*/tmp/*,*/build/*,*/ckeditor/*,*/doc/*,*/source_maps/*,*/dist/*
