@@ -5,6 +5,11 @@ call pathogen#helptags()
 " enter into modern mode
 set nocompatible
 
+" update screen only when needed
+set lazyredraw
+
+" improve the terminal connection
+set ttyfast
 
 "set path to find all file inside recuesive 
 set path+=**
@@ -19,6 +24,7 @@ set autoindent
 
 " Turn on line numbering. Turn it off with 'set nonu'
 set number
+set relativenumber
 
 " Set syntax on
 syntax on
