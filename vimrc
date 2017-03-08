@@ -111,6 +111,7 @@ set splitright
 " Character for CLI expansion (TAB-completion)
 set wildchar=<TAB> 
 
+" ignore some system and temp file 
 set wildignore+=.DS_Store
 set wildignore+=*.jpg,*.jpeg,*.gif,*.png,*.gif,*.psd,*.o,*.obj,*.min.js
 set wildignore+=*/bower_components/*,*/node_modules/*
