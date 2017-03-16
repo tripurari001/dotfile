@@ -84,9 +84,7 @@ set laststatus=2
 set ruler
 
 " utf-8 charset
-if &encoding ==# 'latin1' && has('gui_running')
-  set encoding=utf-8 nobomb
-endif
+set encoding=utf-8 nobomb
 
 " to show invisible carecter as
 set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
