@@ -80,6 +80,10 @@ echo ""
 
 #git clone https://github.com/tripurari001/dotfile.git ~/.vim
 
+if [ -f ~/.vimrc ]; then 
+  rm ~/.vimrc
+fi
+
 ln -s ~/.vim/vimrc ~/.vimrc
 
 echo ""
@@ -87,6 +91,7 @@ echo "updating plugins "
 echo ""
 
 cd ~/.vim
+
 git submodule init
 
 git submodule update
