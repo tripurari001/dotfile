@@ -27,7 +27,7 @@ sleep 3s
 
 echo " "
 
-echo "please make backup of your .vim and .vimrc. "
+echo "please make backup of your old .vim and .vimrc.(press y and continue if you don't know) "
 
 
 
@@ -73,8 +73,8 @@ echo "please make backup of your .vim and .vimrc. "
 
 
 echo ""
-echo "Installing new vim configration"
-sleep 1s
+echo "Installing new vim configuration"
+sleep 2s
 echo ""
 
 
@@ -88,6 +88,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 echo ""
 echo "updating plugins "
+sleep 2s
 echo ""
 
 cd ~/.vim
@@ -98,6 +99,7 @@ git submodule update
 
 echo ""
 echo "vim configration setup completed successfully "
+sleep 2s
 echo ""
 
 #if [ -d ~/.vimrc ]; then 
