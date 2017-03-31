@@ -1,5 +1,7 @@
 # Tripurari's dotfile
 
+#### Mac and Linux only ####
+
 This repository is created for people who want to setup some cool vim configuration and plugins
 in few simple step.
 
