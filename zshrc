@@ -83,3 +83,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#######################
+### my configration ###
+#######################
+
+export LC_ALL=en_IN.UTF-8
+export LANG=en_IN.UTF-8
+export LANGUAGE=en_IN.UTF-8
+
+
+
+
+
+
+
+
+
