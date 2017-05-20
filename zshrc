@@ -98,7 +98,7 @@ export LANGUAGE=en_IN.UTF-8
 #######################
 
 alias ta='tmux attach'
-alias tl='tmux ls'
+alias tls='tmux ls'
 
 
 
