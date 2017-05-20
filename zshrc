@@ -93,8 +93,12 @@ export LANG=en_IN.UTF-8
 export LANGUAGE=en_IN.UTF-8
 
 
+#######################
+### my allias ###
+#######################
 
-
+alias ta='tmux attach'
+alias tl='tmux ls'
 
 
 
