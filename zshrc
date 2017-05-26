@@ -99,6 +99,7 @@ export LANGUAGE=en_IN.UTF-8
 
 alias ta='tmux attach'
 alias tls='tmux ls'
+alias tnew='tmux new-session -s'
 
 
 
