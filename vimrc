@@ -26,9 +26,6 @@ set hls
 set incsearch
 " set status line and show cursor position
 set laststatus=2
-set ruler
-" Show the (partial) command as it’s being typed
-set showcmd
 " insert tab other than indention
 "set smarttab
 " improve the terminal connection
@@ -54,6 +51,12 @@ set lazyredraw
 
 "set path to find all file inside recuesive 
 set path+=**
+
+" Show the (partial) command as it’s being typed
+set showcmd
+
+" show cursor position on status line 
+set ruler
 
 " set indention width to 2 
 set tabstop=2
