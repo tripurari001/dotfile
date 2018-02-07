@@ -1,5 +1,7 @@
 # Tripurari's dotfile
 
+## This Repo is Depricated go to ( https://github.com/tripurari001/trippcconfig ) for latest config
+
 #### Mac and Linux only ####
 
 This repository is created for people who want to setup some cool vim configuration and plugins
